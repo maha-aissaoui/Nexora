@@ -1,10 +1,10 @@
 
 from pathlib import Path
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException  # pyright: ignore[reportMissingImports]
 
-app = FastAPI(title="FixOps RH Service")
+app = FastAPI(title="Nexora RH Service")
 
-FAIL_FILE = Path("/tmp/fixops-rh-unhealthy")
+FAIL_FILE = Path("/tmp/nexora-rh-unhealthy")
 
 EMPLOYEES = [
     {"id": 1, "name": "Ahmed", "department": "IT"},

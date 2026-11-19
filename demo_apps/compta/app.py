@@ -1,6 +1,6 @@
 
 from pathlib import Path
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException  # type: ignore[import-not-found]
 from demo_apps.compta.data import INVOICES
 
 app = FastAPI(title="FixOps Compta Service")
