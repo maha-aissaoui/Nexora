@@ -1,0 +1,14 @@
+
+[Unit]
+Description=FixOps Compta Demo Service
+After=network.target
+
+[Service]
+Type=simple
+User=__FIXOPS_USER__
+WorkingDirectory=__FIXOPS_DIR__
+ExecStart=__FIXOPS_DIR__/.venv/bin/uvicorn demo_apps.compta.app:app --host 127.0.0.1 --port 8102
+Restart=no
+
+[Install]
+WantedBy=multi-user.target

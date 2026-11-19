@@ -1,0 +1,10 @@
+
+[Unit]
+Description=FixOps Compta Daily Report
+After=local-fs.target
+
+[Service]
+Type=oneshot
+User=__FIXOPS_USER__
+WorkingDirectory=__FIXOPS_DIR__
+ExecStart=__FIXOPS_DIR__/.venv/bin/python -m demo_apps.compta.daily_report
