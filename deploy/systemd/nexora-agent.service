@@ -1,0 +1,15 @@
+[Unit]
+Description=NEXORA Agent API
+After=network.target
+
+[Service]
+Type=simple
+User=__NEXORA_USER__
+WorkingDirectory=__NEXORA_DIR__
+EnvironmentFile=/etc/nexora/agent.env
+ExecStart=__NEXORA_DIR__/.venv/bin/uvicorn agent.main:app --host 0.0.0.0 --port 8001
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
