@@ -1,10 +1,10 @@
 
 [Unit]
-Description=FixOps Compta Daily Report
+Description=NEXORA Compta Daily Report
 After=local-fs.target
 
 [Service]
 Type=oneshot
-User=__FIXOPS_USER__
-WorkingDirectory=__FIXOPS_DIR__
-ExecStart=__FIXOPS_DIR__/.venv/bin/python -m demo_apps.compta.daily_report
+User=__NEXORA_USER__
+WorkingDirectory=__NEXORA_DIR__
+ExecStart=__NEXORA_DIR__/.venv/bin/python -m demo_apps.compta.daily_report

@@ -1,13 +1,13 @@
 
 [Unit]
-Description=FixOps RH Demo Service
+Description=NEXORA RH Demo Service
 After=network.target
 
 [Service]
 Type=simple
-User=__FIXOPS_USER__
-WorkingDirectory=__FIXOPS_DIR__
-ExecStart=__FIXOPS_DIR__/.venv/bin/uvicorn demo_apps.rh.app:app --host 127.0.0.1 --port 8101
+User=__NEXORA_USER__
+WorkingDirectory=__NEXORA_DIR__
+ExecStart=__NEXORA_DIR__/.venv/bin/uvicorn demo_apps.rh.app:app --host 127.0.0.1 --port 8101
 Restart=no
 
 [Install]

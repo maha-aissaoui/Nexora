@@ -6,8 +6,8 @@ from datetime import datetime, timezone
 
 from demo_apps.compta.data import INVOICES
 
-FAIL_FILE = Path("/tmp/fixops-daily-report-fail")
-OUTPUT_FILE = Path("/tmp/fixops-daily-report.json")
+FAIL_FILE = Path("/tmp/nexora-daily-report-fail")
+OUTPUT_FILE = Path("/tmp/nexora-daily-report.json")
 
 
 def main():

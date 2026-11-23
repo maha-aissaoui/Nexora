@@ -3,9 +3,9 @@ from pathlib import Path
 from fastapi import FastAPI, HTTPException  # type: ignore[import-not-found]
 from demo_apps.compta.data import INVOICES
 
-app = FastAPI(title="FixOps Compta Service")
+app = FastAPI(title="Nexora Compta Service")
 
-FAIL_FILE = Path("/tmp/fixops-compta-unhealthy")
+FAIL_FILE = Path("/tmp/nexora-compta-unhealthy")
 
 
 @app.get("/health")
